@@ -35,4 +35,33 @@ public class Routes {
         Actor.actors.add(actor);
         return actor;
     }
+    
+    @GetMapping("/movies/{id}")
+
+    //Get a movie with all its actors
+
+    public Movie getSingleMovie(@PathVariable Integer id) {
+        Movie match = null;
+
+        for (Movie movie : Movie.movies) {
+            if (movie.id == id) {
+                match = movie;
+            }
+        }
+        if(match == null) {
+            throw new Error("Movie not found");
+        }
+
+        return match;
+    }
+
+    @PostMapping("/movies")
+
+    public Movie createMovie(@RequestBody Movie movie) {
+        // create a new movie
+        // Think of a way to auto-increment a new id each time we create a new movie or actor
+        
+        Movie.movies.add(movie);
+        return movie;
+    }
 }
