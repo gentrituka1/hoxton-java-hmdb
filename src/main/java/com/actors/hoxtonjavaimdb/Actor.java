@@ -15,10 +15,9 @@ public class Actor {
   public Integer yearOfBirth;
 
   static {
-    new Actor(1, "Samuel", "Jackson", 1948);
-    new Actor(2, "Will", "Smith", 1968);
-    new Actor(3, "Brad", "Pitt", 1963);
-    new Actor(4, "Jennifer", "Aniston", 1969);
+    new Actor(1, "Christian", "Bale", 1974);
+    new Actor(2, "Robert", "De Niro", 1963);
+    new Actor(3, "Al", "Pacino", 1967);
   }
 
   public Actor(Integer id, String firstName, String lastName, Integer yearOfBirth) {

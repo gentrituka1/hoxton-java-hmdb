@@ -16,10 +16,9 @@ public class Movie {
 
 
   static {
-    new Movie(1, "A Time to Kill", "Carl Lee Hailey (Samuel L. Jackson) is a heartbroken black father who avenges his daughter's brutal rape by shooting the bigoted men responsible for the crime as they are on their way to trial.", 1996, 1);
-    new Movie(2, "We're the Millers", "Small-time pot dealer David (Jason Sudeikis) learns the hard way that no good deed goes unpunished; trying to help some teens, he is jumped by thugs and loses his cash and stash.", 2013,4);
-    new Movie(3, "Hitch", "Dating coach Alex Hitch Hitchens (Will Smith) mentors a bumbling client, Albert (Kevin James), who hopes to win the heart of the glamorous Allegra Cole (Amber Valletta).", 2005,2);
-    new Movie(4, "The Curious Case of Benjamin Button", "Born under unusual circumstances, Benjamin Button (Brad Pitt) springs into being as an elderly man in a New Orleans nursing home and ages in reverse.", 2008,3);
+    new Movie(1, "The Godfather", "The corruption-soaked story follows a powerful immigrant family grappling with the paradoxical values of reign and religion; those moral contradictions are crystallized in a legendary baptism sequence, superbly edited in parallel to the murdering of four rivaling dons.", 1972, 1);
+    new Movie(2, "Goodfellas", "Ray Liotta’s opening line is the crime movie equivalent of ‘Once upon a time…’, and what follows is Martin Scorsese’s version of a fairy tale – the story of a starry-eyed Brooklyn kid who realises his boyhood dream and still comes out a schnook in the end.", 1990,4);
+    new Movie(3, "The Dark Knight", "There’s a new Batman in Gotham, in the shadowy form of Matt Reeves’s The Batman – and this is the bar it has to clear.", 2008,2);
   }
 
   public Movie(Integer id, String title, String description, Integer year, Integer actorId) {

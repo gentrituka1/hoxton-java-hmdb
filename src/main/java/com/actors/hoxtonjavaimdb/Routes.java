@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ActorRoutes {
+public class Routes {
     @GetMapping("/actors/{id}")
     public Actor getSingleActor(@PathVariable Integer id) {
         Actor match = null;
@@ -31,7 +31,8 @@ public class ActorRoutes {
     @PostMapping("/actors")
 
     public Actor createActor(@RequestBody Actor actor) {
-        
+        // create a new actor and include his/her movies
+        Actor.actors.add(actor);
         return actor;
     }
 }
