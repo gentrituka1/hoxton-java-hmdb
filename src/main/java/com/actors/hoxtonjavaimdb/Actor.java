@@ -13,18 +13,20 @@ public class Actor {
   public String firstName;
   public String lastName;
   public Integer yearOfBirth;
+  public Integer movieId;
 
   static {
-    new Actor(1, "Christian", "Bale", 1974);
-    new Actor(2, "Robert", "De Niro", 1963);
-    new Actor(3, "Al", "Pacino", 1967);
+    new Actor(1, "Christian", "Bale", 1974, 3);
+    new Actor(2, "Robert", "De Niro", 1963, 2);
+    new Actor(3, "Al", "Pacino", 1967, 1);
   }
 
-  public Actor(Integer id, String firstName, String lastName, Integer yearOfBirth) {
+  public Actor(Integer id, String firstName, String lastName, Integer yearOfBirth, Integer movieId) {
     this.id = id;
     this.firstName = firstName;
     this.lastName = lastName;
     this.yearOfBirth = yearOfBirth;
+    this.movieId = movieId;
 
     Actor.actors.add(this);
   }
